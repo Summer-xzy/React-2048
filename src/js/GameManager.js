@@ -17,7 +17,7 @@
 */
 var GameManager = {
     /*随机获得未赋值的坐标点
-        输入：array-最新棋盘(包括新出现的数字)
+        输入：array-最新棋盘
         输出：一个坐标点 eq：[2,1]
     */
     getRandomPostion: function (array) {
@@ -159,7 +159,7 @@ var GameManager = {
         return false
     },
     /*移动棋盘
-        输入：board-最新棋盘(不包括新出现的数字)   方向：上下左右
+        输入：board-最新棋盘   方向：上下左右
         输出：newboard-移动后的棋盘(不包括新出现的数字、不包括合并)
     */
     moveBoard: function (board, direction) {
@@ -234,7 +234,7 @@ var GameManager = {
        return newBoard;
     },
     /*合并棋盘
-        输入：board-合并之前的棋盘(包括新出现的数字)   方向：上下左右
+        输入：board-合并之前的棋盘   方向：上下左右
         输出：newboard-移动后的棋盘(不包括新出现的数字、包括合并)
     */
     mergeBoard: function (board, direction) {
@@ -298,7 +298,7 @@ var GameManager = {
         }
     },
     /*胜利
-        输入：arrays-最新棋盘(包括新出现的数字)
+        输入：arrays-最新棋盘
         输出：出现2048，返回true,没出现，返回false
     */
     isWin: function (arrays) {
@@ -312,7 +312,7 @@ var GameManager = {
         return false;
     },
     /*失败
-        输入：arrays-最新棋盘(包括新出现的数字)
+        输入：arrays-最新棋盘
         输出：新旧棋盘不一样，返回false，一样，返回true
     */
     isLose: function (array) {

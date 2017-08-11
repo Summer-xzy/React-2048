@@ -24,7 +24,6 @@ class App extends React.Component {
         if (e.keyCode > 40 || e.keyCode < 37) {
             return false;
         }
-        var postion = GameManager.getRandomPostion(this.state.board);
         var canMoveup = GameManager.canMoveup(this.state.board);
         var canMovedown = GameManager.canMovedown(this.state.board);
         var canMoveleft = GameManager.canMoveleft(this.state.board);
