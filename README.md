@@ -2,6 +2,7 @@
 2048小游戏   
 使用React、ES6、less、webpack   
 ![Image text](https://github.com/Summer-xzy/React-2048/blob/master/img-show/1.png)    
+![Image text](https://github.com/Summer-xzy/React-2048/blob/master/img-show/2.png)  
 
 ##下载可直接打开，程序内有详细注释     
 
