@@ -238,7 +238,6 @@ var GameManager = {
         输出：newboard-移动后的棋盘(不包括新出现的数字、包括合并)
     */
     mergeBoard: function (board, direction) {
-        var score = 0;
         var newBoard = this.copyBoard(board);
         if (direction == 38) {
             //up
